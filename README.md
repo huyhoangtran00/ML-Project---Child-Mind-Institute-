@@ -39,8 +39,11 @@ In this approach, the SII is predicted directly from the input features using a 
    - ![image](https://github.com/user-attachments/assets/9b47cc16-799f-4c44-8f62-506298e526c7)
 
 
+
  **Evaluation:**
    - Assess the model's performance using metrics like QWK
+   - ![image](https://github.com/user-attachments/assets/b347300b-9a87-4c50-bdfe-5f33d9c467c1)
+   
 
 ## 3. XGBoost + Threshold Tuning
 This approach uses XGBoost, a powerful gradient boosting algorithm, combined with threshold tuning to enhance prediction accuracy.
@@ -55,6 +58,9 @@ This approach uses XGBoost, a powerful gradient boosting algorithm, combined wit
    - Use the QWK score to evaluate and adjust the thresholds.
    - ![image](https://github.com/user-attachments/assets/46e7d3e2-9969-427d-982a-2caacb125cd6)
 
+ **Evaluation:**
+   - Assess the model's performance using metrics like QWK
+   - ![image](https://github.com/user-attachments/assets/f1bd3580-0b83-4419-bff2-3ecb3d14f98e)
 
 
 ## 4. Vote Regressor + Threshold Tuning
@@ -74,13 +80,11 @@ This method combines the predictions of multiple regression models through ensem
 
 
  **Evaluation:**
-**Evaluation:**
-   - Use K-Fold Cross-Validation to ensure robust evaluation.
-   - ![image](https://github.com/user-attachments/assets/771946c2-2691-4b00-9e6d-7acf98198116)
+   - ![image](https://github.com/user-attachments/assets/36bf6390-6566-4f59-8194-d058d7031bcb)
 
 
-   - Metrics used: QWK
-   - ![image](https://github.com/user-attachments/assets/a7755548-5648-4fdc-a1a3-df767fc5bd60)
+
+
 
 ## 5.Result
    - ![image](https://github.com/user-attachments/assets/0c82e60b-fbd9-4b18-adb1-b675acfc5ed6)

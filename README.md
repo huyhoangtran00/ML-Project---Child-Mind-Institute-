@@ -11,7 +11,7 @@ To estimate the Self-Identified Internet Addiction Score (SII), we first predict
 
  **Model Training:**
    - Train regression models using Random Forest to predict individual PCIAT components.
-![image](https://github.com/user-attachments/assets/18c1cf37-6e46-4906-84cd-17d0b634fa43)
+   - ![image](https://github.com/user-attachments/assets/18c1cf37-6e46-4906-84cd-17d0b634fa43)
 
  **Aggregation:**
    - Combine the predicted PCIAT components to calculate the final SII.
@@ -19,7 +19,7 @@ To estimate the Self-Identified Internet Addiction Score (SII), we first predict
  **Evaluation:**
    - Compare the derived SII values with the ground truth SII values.
    - Metrics used: QWK Score
-     ![image](https://github.com/user-attachments/assets/fa91fcd4-6926-4e14-9072-cf6335dcf76a)
+   - ![image](https://github.com/user-attachments/assets/fa91fcd4-6926-4e14-9072-cf6335dcf76a)
 
 
 ## 2. Direct Prediction of SII + Grid Search Optimization
@@ -36,7 +36,7 @@ In this approach, the SII is predicted directly from the input features using a 
  **Hyperparameter Tuning:**
    - Apply Grid Search with cross-validation to identify the optimal model parameters.
    - Optimize the model using the Quadratic Weighted Kappa (QWK) score.
-     ![image](https://github.com/user-attachments/assets/9b47cc16-799f-4c44-8f62-506298e526c7)
+   - ![image](https://github.com/user-attachments/assets/9b47cc16-799f-4c44-8f62-506298e526c7)
 
 
  **Evaluation:**
@@ -53,7 +53,7 @@ This approach uses XGBoost, a powerful gradient boosting algorithm, combined wit
 **Threshold Tuning:**
    - Fine-tune the decision thresholds to optimize the model's predictive power.
    - Use the QWK score to evaluate and adjust the thresholds.
-     ![image](https://github.com/user-attachments/assets/46e7d3e2-9969-427d-982a-2caacb125cd6)
+   - ![image](https://github.com/user-attachments/assets/46e7d3e2-9969-427d-982a-2caacb125cd6)
 
 
 
@@ -64,13 +64,13 @@ This method combines the predictions of multiple regression models through ensem
 **Ensemble Creation:**
    - Train multiple regression models :  Random Forest + XGBoost
    - Combine their predictions using a Voting Regressor.
-     ![image](https://github.com/user-attachments/assets/cd0e81e3-0f4d-4f5c-abb1-6db079cd3ab5)
+   - ![image](https://github.com/user-attachments/assets/cd0e81e3-0f4d-4f5c-abb1-6db079cd3ab5)
 
 
  **Threshold Tuning:**
    - Adjust thresholds to minimize prediction errors.
    - Optimize the ensemble performance using the QWK score.
-   ![image](https://github.com/user-attachments/assets/46e7d3e2-9969-427d-982a-2caacb125cd6)
+   - ![image](https://github.com/user-attachments/assets/46e7d3e2-9969-427d-982a-2caacb125cd6)
 
 
  **Evaluation:**
@@ -80,5 +80,7 @@ This method combines the predictions of multiple regression models through ensem
 
 
    - Metrics used: QWK
-![image](https://github.com/user-attachments/assets/a7755548-5648-4fdc-a1a3-df767fc5bd60)
+   - ![image](https://github.com/user-attachments/assets/a7755548-5648-4fdc-a1a3-df767fc5bd60)
 
+## 5.Result
+   - ![image](https://github.com/user-attachments/assets/0c82e60b-fbd9-4b18-adb1-b675acfc5ed6)

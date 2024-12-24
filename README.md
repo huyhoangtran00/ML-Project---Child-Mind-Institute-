@@ -32,9 +32,10 @@ In this approach, the SII is predicted directly from the input features using a 
 
 3. **Hyperparameter Tuning:**
    - Apply Grid Search with cross-validation to identify the optimal model parameters.
+   - Optimize the model using the Quadratic Weighted Kappa (QWK) score.
 
 4. **Evaluation:**
-   - Assess the model's performance using metrics like RMSE and R-squared.
+   - Assess the model's performance using metrics like QWK and RMSE.
 
 ## 3. XGBoost + Threshold Tuning
 This approach uses XGBoost, a powerful gradient boosting algorithm, combined with threshold tuning to enhance prediction accuracy.
@@ -49,9 +50,11 @@ This approach uses XGBoost, a powerful gradient boosting algorithm, combined wit
 
 3. **Threshold Tuning:**
    - Fine-tune the decision thresholds to optimize the model's predictive power.
+   - Use the QWK score to evaluate and adjust the thresholds.
 
 4. **Evaluation:**
    - Use validation data to measure performance and adjust thresholds accordingly.
+   - Metrics used: QWK and RMSE.
 
 ## 4. Vote Regressor + Threshold Tuning
 This method combines the predictions of multiple regression models through ensemble learning and tunes thresholds for better accuracy.
@@ -63,7 +66,8 @@ This method combines the predictions of multiple regression models through ensem
 
 2. **Threshold Tuning:**
    - Adjust thresholds to minimize prediction errors.
+   - Optimize the ensemble performance using the QWK score.
 
 3. **Evaluation:**
    - Compare ensemble performance with individual models.
-   - Metrics used: RMSE, MAE, and R-squared.
+   - Metrics used: QWK and RMSE.
